@@ -1,0 +1,55 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "flask-ai-shada"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "sku": {
+            "value": "F0"
+        },
+        "resourceGroupName": {
+            "value": "flask-ai"
+        },
+        "resourceGroupId": {
+            "value": "/subscriptions/e2ee1c0b-1a1c-4f45-b177-d2a5d8fe308c/resourceGroups/flask-ai"
+        },
+        "tagValues": {
+            "value": {}
+        },
+        "vnet": {
+            "value": {}
+        },
+        "ipRules": {
+            "value": []
+        },
+        "virtualNetworkType": {
+            "value": "None"
+        },
+        "identity": {
+            "value": {
+                "type": "None"
+            }
+        },
+        "privateEndpoints": {
+            "value": []
+        },
+        "isCommitmentPlanForDisconnectedContainerEnabled": {
+            "value": false
+        },
+        "commitmentPlanForDisconnectedContainer": {
+            "value": {
+                "current": {},
+                "hostingModel": "DisconnectedContainer",
+                "planType": "Characters",
+                "autoRenew": true
+            }
+        },
+        "privateDnsZone": {
+            "value": "[$item.privateDnsZoneConfiguration.integrateWithPrivateDnsZone]"
+        }
+    }
+}
